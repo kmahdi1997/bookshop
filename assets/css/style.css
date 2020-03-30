@@ -1,0 +1,21 @@
+header {
+  background-color: #573ba3; }
+
+.section {
+  background-color: #573ba3;
+  color: #fff; }
+
+.section-detail {
+  min-height: 35rem; }
+
+.search .form-group input {
+  border-radius: 9999px;
+  width: 25vw; }
+
+.section .section-detail {
+  background-image: url("../images/book.jpg");
+  background-size: auto 60%;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+/*# sourceMappingURL=style.css.map */
