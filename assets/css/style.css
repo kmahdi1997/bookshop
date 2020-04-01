@@ -14,7 +14,7 @@ header {
 
 .section .section-detail {
   background-image: url("../images/bookshop.jpg");
-  background-size: auto 60%;
+  background-size: 100% 60%;
   background-repeat: no-repeat;
   background-position: bottom center; }
 
