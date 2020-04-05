@@ -44,4 +44,37 @@ header {
   font-size: 14px;
   font-weight: 600; }
 
+.one-produce .one-produce-image img {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in; }
+
+.one-produce .one-produce-price a {
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #573ba3; }
+
+.one-produce .one-produce-price h6 {
+  color: #573ba3; }
+
+.one-produce .one-produce-price .last-price {
+  color: red;
+  text-decoration: line-through; }
+
+.one-produce .buttons .buy, .add-to-cart {
+  border-radius: 9999px;
+  transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in; }
+
+.one-produce .buttons .buy:hover, .add-to-cart:hover {
+  transform: scale(1.025); }
+
+.one-produce .buttons .buy {
+  background-color: #573ba3;
+  color: #fff;
+  font-weight: 600; }
+
+.one-produce .buttons .add-to-cart {
+  border: 2px solid #573ba3;
+  color: #573ba3;
+  font-weight: 600; }
+
 /*# sourceMappingURL=style.css.map */
