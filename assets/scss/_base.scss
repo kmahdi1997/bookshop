@@ -18,9 +18,15 @@ header {
 
 .section .section-detail {
 	background-image: url('../images/bookshop.jpg');
-	background-size: 100% 60%;
+	background-size: auto 60%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
+}
+
+.home-page-products .list-title a {
+	height: fit-content;
+	border-radius: 9999px;
+	font-weight: 600;
 }
 
 .home-page-products .last-price {

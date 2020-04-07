@@ -14,9 +14,14 @@ header {
 
 .section .section-detail {
   background-image: url("../images/bookshop.jpg");
-  background-size: 100% 60%;
+  background-size: auto 60%;
   background-repeat: no-repeat;
   background-position: bottom center; }
+
+.home-page-products .list-title a {
+  height: fit-content;
+  border-radius: 9999px;
+  font-weight: 600; }
 
 .home-page-products .last-price {
   color: red;
@@ -69,12 +74,14 @@ header {
 
 .one-produce .buttons .buy {
   background-color: #573ba3;
-  color: #fff;
-  font-weight: 600; }
+  color: #fff; }
 
 .one-produce .buttons .add-to-cart {
   border: 2px solid #573ba3;
-  color: #573ba3;
-  font-weight: 600; }
+  color: #573ba3; }
+
+footer {
+  background-color: #2b0f42;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
