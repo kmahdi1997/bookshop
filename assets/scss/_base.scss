@@ -1,5 +1,38 @@
 header {
 	background-color: #573ba3;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+header  .navbar-nav {
+	flex-direction: row;
+}
+
+header  .navbar-nav .nav-item .nav-link {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 0;
+}
+
+header  .navbar-nav .nav-item i {
+	font-size: 18px;
+}
+
+header .form-group .form-control {
+	border-radius: 9999px;
+	font-size: 14px;
+}
+
+header .form-group {
+	position: relative;
+}
+
+header .form-group i {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 14px;
 }
 
 .section {
@@ -11,14 +44,32 @@ header {
 	min-height: 35rem;
 }
 
-.search .form-group input {
+.section .search {
+	position: relative;
+}
+
+.section .search .btn {
+	position: absolute;
+	right: 10px;
+	top: 5px;
 	border-radius: 9999px;
-	width: 25vw;
+	height: 40px;
+	width: 40px;
+	background-color: #de2454;
+}
+
+.section .search .btn i {
+	color: #fff;
+}
+
+.section .search .form-group input {
+	border-radius: 9999px;
+	width: 30vw;
 }
 
 .section .section-detail {
 	background-image: url('../images/bookshop.jpg');
-	background-size: auto 60%;
+	background-size: auto 67%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
 }
@@ -32,6 +83,10 @@ header {
 .home-page-products .last-price {
 	color: red;
 	text-decoration: line-through;
+}
+
+.home-page-products .card {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .home-page-products .card .book-link img {
@@ -49,7 +104,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	min-height: 300px;
+	min-height: 26vw;
 }
 
 .home-page-products-detail .card .card-text {
