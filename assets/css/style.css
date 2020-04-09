@@ -96,7 +96,8 @@ header .form-group i {
 
 .one-produce .one-produce-image img {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in; }
+  transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in;
+  width: 50vw; }
 
 .one-produce .one-produce-price a {
   font-size: 14px;
@@ -137,12 +138,27 @@ footer {
     display: none; }
 
   header #small-size li i {
-    color: #fff; } }
+    color: #fff; }
+
+  .one-produce .book-detail {
+    text-align: center; }
+
+  .one-produce .buttons .buy, .add-to-cart {
+    display: block; }
+
+  .one-produce .buttons .buy {
+    margin-bottom: 10px; }
+
+  .one-produce .one-produce-price .row {
+    display: none; } }
 @media screen and (min-width: 992px) {
   header #small-size {
     display: none; }
 
   header form {
+    display: none; }
+
+  .one-produce .one-produce-price form {
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
