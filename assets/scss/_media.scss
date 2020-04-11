@@ -1,0 +1,45 @@
+@media screen and (max-width: 992px) {
+    .section form {
+        display: none;
+    }
+
+    header #big-size {
+        display: none;
+    }
+
+        header #small-size li i {
+        color: #fff;
+    }
+
+    .one-product .book-detail {
+        text-align: center;
+    }
+
+    .one-product .buttons .buy, .add-to-cart {
+        display: block;
+    }
+
+    .one-product .buttons .buy {
+        margin-bottom: 10px;
+    }
+    .one-product .one-product-price .row {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    header #small-size {
+        display: none;
+    }
+
+    header form {
+        display: none;
+    }
+
+    .one-product .one-product-price form {
+        display: none;
+    }
+}
