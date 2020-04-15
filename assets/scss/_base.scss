@@ -67,6 +67,11 @@ header .form-group i {
 	width: 30vw;
 }
 
+.section .search .form-control:focus {
+	border-color: #de2454;
+	box-shadow: 0 0 0 0.2rem rgb(222, 36, 84);
+}
+
 .section .section-detail {
 	background-image: url('../images/bookshop.jpg');
 	background-size: auto 67%;
@@ -90,18 +95,16 @@ header .form-group i {
 }
 
 .home-page-products .card .book-link img {
-	box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
 	transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
 .home-page-products .card .book-link img:hover {
-	box-shadow: 0px 11px 18px rgba(0,0,0,0.3);
 	transform: scale(1.025);
 }
 
 .advertising .advertising-detail {
 	background-image: url("../images/takhfif.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-height: 26vw;
@@ -114,4 +117,9 @@ header .form-group i {
 .home-page-products-detail .card .price {
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.small-search .form-control:focus {
+	border-color: #de2454;
+	box-shadow: 0 0 0 0.2rem rgb(222, 36, 84);
 }
