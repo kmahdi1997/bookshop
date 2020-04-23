@@ -82,13 +82,6 @@ header .form-group i {
 .home-page-products .card .book-link img:hover {
   transform: scale(1.025); }
 
-.advertising .advertising-detail {
-  background-image: url("../images/takhfif.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 26vw; }
-
 .home-page-products-detail .card .card-text {
   font-size: 14px; }
 
