@@ -1,0 +1,198 @@
+@font-face {
+    font-family: IRANSans;
+    src: url('../../dist/fonts/IRANSANSE/IRANSANS_LIGHT_0.TTF') format('truetype');
+    font-weight: 200;
+}
+
+body {
+    font-family: IRANSans;
+}
+
+
+header {
+    background-color: #573ba3;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .navbar-nav {
+    flex-direction: row;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+}
+
+header .navbar-nav .nav-item i {
+    font-size: 18px;
+}
+
+header .form-group .form-control {
+    border-radius: 9999px;
+    font-size: 14px;
+}
+
+header .form-group {
+    position: relative;
+}
+
+header .small-search i {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 14px;
+}
+
+.section {
+    background-color: #573ba3;
+    color: #fff;
+}
+
+.section .search {
+    position: relative;
+}
+
+.section .search .btn {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 9999px;
+    height: 40px;
+    width: 40px;
+    background-color: #de2454;
+    line-height: 2;
+    padding: 5px;
+}
+
+.section .search .btn i {
+    color: #fff;
+}
+
+.section .search .form-group label {
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(.64, .09, .08, 1) all;
+}
+
+.section .search .form-group input {
+    border-radius: 9999px;
+    width: 25vw;
+    border: none !important;
+    outline: none !important;
+    border-color: transparent;
+    box-shadow: none;
+    color: #333;
+    padding: 0 80px;
+
+    &:focus,
+    &:valid {
+        background-position: 0 0;
+
+        ~label {
+            color: #ddd;
+            font-size: 10px;
+            top: 16px;
+            right: 10px;
+        }
+    }
+}
+
+.section .section-detail {
+    background-image: url('../images/bookshop.jpg');
+    background-size: auto 67%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    min-height: 35rem;
+}
+
+.home-page-products .list-title a {
+    height: fit-content;
+    border-radius: 9999px;
+    font-weight: 600;
+}
+
+.home-page-products .last-price {
+    color: red;
+    text-decoration: line-through;
+}
+
+.home-page-products .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.home-page-products .card .book-link img {
+    transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in;
+}
+
+.home-page-products .card .book-link img:hover {
+    transform: scale(1.025);
+}
+
+.advertising .advertising-detail {
+    // background-image: url("../images/takhfif.jpg");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 26vw;
+}
+
+.home-page-products-detail .card .card-title {
+	font-size: 14px;
+}
+
+.home-page-products-detail .card .card-text {
+    font-size: 14px;
+}
+
+.home-page-products-detail .card .price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+header .small-search input {
+    border-radius: 9999px;
+    border: none !important;
+    outline: none !important;
+    border-color: transparent;
+    box-shadow: none;
+    color: #333;
+    padding: 0 60px;
+
+    &:focus,
+    &:valid {
+        ~label {
+            color: #ddd;
+            font-size: 8px;
+            top: 12px;
+            right: 10px;
+        }
+    }
+}
+
+header .small-search label {
+    position: absolute;
+    right: 25px;
+    top: 6px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(.64, .09, .08, 1) all;
+}
+
+.small-search input:focus {
+    border: none !important;
+    outline: none !important;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
