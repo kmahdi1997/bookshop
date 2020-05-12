@@ -2,29 +2,29 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/app.css">
     <title>Bookstore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="rtl">
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
-                <a class="navbar-brand text-white" href="#">Bookstore</a>
-                <ul class="navbar-nav ml-auto" id="big-size">
+                <a class="navbar-brand text-white" href="#">کتاب سعدی</a>
+                <ul class="navbar-nav mr-auto" id="big-size">
                     <li class="nav-item">
-                        <a class="nav-link text-white mr-3" href="#">FIND A BOOKSTORE</a>
+                        <a class="nav-link text-white ml-3" href="#">فروشگاه ها</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white mr-3" href="#">BROWSE</a>
+                        <a class="nav-link text-white ml-3" href="#">عضویت</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">
-                            <i class="fas fa-shopping-bag text-white mr-3"></i>
+                        <a class="ml-3" href="#">
+                            <i class="fas fa-shopping-bag text-white"></i>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -36,17 +36,17 @@
                 <!-- ////////////////////////////////////////////////////////////////////////////////// -->
                 <ul class="navbar-nav" id="small-size">
                     <li class="nav-item">
-                        <a href="#">
-                            <i class="far fa-map mr-3"></i>
+                        <a class="mr-3" href="#">
+                            <i class="far fa-map"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">
-                            <i class="fas fa-shopping-bag mr-3"></i>
+                        <a class="mr-3" href="#">
+                            <i class="fas fa-shopping-bag"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">
+                        <a class="mr-3" href="#">
                             <i class="far fa-user-circle"></i>
                         </a>
                     </li>
@@ -54,7 +54,8 @@
             </nav>
             <form>
                 <div class="form-group small-search m-0 pb-3">
-                    <input type="email" class="form-control" id="exampleInputsearch" aria-describedby="emailHelp" placeholder="Find a book">
+                    <input type="email" class="form-control" id="name" aria-describedby="emailHelp" required>
+                    <label for="name">جستجو کنید ...</label>
                     <i class="fas fa-search"></i>
                 </div>
             </form>
@@ -62,15 +63,17 @@
     </header>
     <div class="section">
         <div class="container">
-            <div class="section-detail d-flex flex-column align-items-center text-center">
-                <h1 class="my-5">
-                    Support local bookstores,
-                    <br>
-                    shop online with Bookshop.
+            <div class="section-detail d-flex flex-column align-items-center justify-content-safe text-center">
+                <h1 class="font-weight-bold">
+                    پشتیبانی از کتاب‌فروشی‌های شهر
                 </h1>
-                <form class="search">
+                <h4 class="font-weight-bold">
+                    فروش آنلاین کتاب
+                </h4>
+                <form class="search mt-5">
                     <div class="form-group">
-                        <input type="email" class="form-control p-4" id="exampleInputsearch" aria-describedby="emailHelp" placeholder="search">
+                        <input type="email" class="form-control py-4" id="name" aria-describedby="emailHelp" required>
+                        <label for="name">جستجو کنید  ...</label>
                         <a href="#" class="btn">
                             <i class="fas fa-search"></i>
                         </a>
@@ -82,8 +85,8 @@
     <div class="home-page-products popular-book pt-5">
         <div class="container">
             <div class="list-title d-flex justify-content-between">
-                <h4 class="mb-4">Popular book</h4>
-                <a href="#" class="btn btn-danger btn-sm px-4">VIEW ALL LIST</a>
+                <h4 class="mb-4">محبوب‌ترین</h4>
+                <a href="#" class="btn btn-danger btn-sm px-4">ادامه‌ی لیست</a>
             </div>
             <div class="home-page-products-detail">
                 <div class="row">
@@ -92,12 +95,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="product.html" target="_blank">
-                                        <img src="assets/images/book01.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book01.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">Where the Crawdads Sing</h6>
+                                        <p class="card-title font-weight-bold">جایی که خرچنگ‌ها آواز می‌خوانند</h6>
                                         <p class="card-text">Delia Owens</p>
                                         <p class="price m-0">
                                             <span class="last-price">$26.00</span>
@@ -113,12 +116,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book02.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book02.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Glass Hotel</h6>
+                                        <p class="card-title font-weight-bold">هتل شیشه‌ای</h6>
                                         <p class="card-text">Emily St John Mandel</p>
                                         <p class="price m-0">
                                             <span class="last-price">$26.95</span>
@@ -134,12 +137,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book03.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book03.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Mirror & the Light</h6>
+                                        <p class="card-title font-weight-bold">آینه و نور</h6>
                                         <p class="card-text">Hilary Mantel</p>
                                         <p class="price m-0">
                                             <span class="last-price">$30.00</span>
@@ -155,12 +158,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book04.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book04.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Night Watchman</h6>
+                                        <p class="card-title font-weight-bold">نگهبانان شب</h6>
                                         <p class="card-text">Louise Erdrich</p>
                                         <p class="price m-0">
                                             <span class="last-price">$28.99</span>
@@ -176,12 +179,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book05.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book05.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The City We Became</h6>
+                                        <p class="card-title font-weight-bold">شهری که ما شدیم</h6>
                                         <p class="card-text">N K Jemisin</p>
                                         <p class="price m-0">
                                             <span class="last-price">$28.00</span>
@@ -197,12 +200,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book06.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book06.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">Writers & Lovers</h6>
+                                        <p class="card-title font-weight-bold">نویسندگان و عاشقان</h6>
                                         <p class="card-text">Lily King</p>
                                         <p class="price m-0">
                                             <span class="last-price">$27.00</span>
@@ -220,15 +223,15 @@
     <div class="advertising mb-4 py-3">
         <div class="container">
             <div class="advertising-detail">
-                <img class="banner img-fluid mx-auto d-block" src="assets/images/takhfif.jpg">
+                <img class="banner img-fluid mx-auto d-block" src="dist/images/takhfif.jpg">
             </div>
         </div>
     </div>
-    <div class="home-page-products Bestselling-book mb-4">
+    <div class="home-page-products bestselling-book pt-5">
         <div class="container">
             <div class="list-title d-flex justify-content-between">
-                <h4 class="mb-4">Bestselling book</h4>
-                <a href="#" class="btn btn-danger btn-sm px-4">VIEW ALL LIST</a>
+                <h4 class="mb-4">پرفروش‌ترین</h4>
+                <a href="#" class="btn btn-danger btn-sm px-4">ادامه‌ی لیست</a>
             </div>
             <div class="home-page-products-detail">
                 <div class="row">
@@ -236,13 +239,13 @@
                         <div class="card h-100 border-0">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
-                                    <a class="book-link" href="produce.html" target="_blank">
-                                        <img src="assets/images/book01.jpg" class="rounded" alt="..." style="width: 100%;">
+                                    <a class="book-link" href="product.html" target="_blank">
+                                        <img src="dist/images/book01.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">Where the Crawdads Sing</h6>
+                                        <p class="card-title font-weight-bold">جایی که خرچنگ‌ها آواز می‌خوانند</h6>
                                         <p class="card-text">Delia Owens</p>
                                         <p class="price m-0">
                                             <span class="last-price">$26.00</span>
@@ -258,12 +261,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book02.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book02.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Glass Hotel</h6>
+                                        <p class="card-title font-weight-bold">هتل شیشه‌ای</h6>
                                         <p class="card-text">Emily St John Mandel</p>
                                         <p class="price m-0">
                                             <span class="last-price">$26.95</span>
@@ -279,12 +282,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book03.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book03.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Mirror & the Light</h6>
+                                        <p class="card-title font-weight-bold">آینه و نور</h6>
                                         <p class="card-text">Hilary Mantel</p>
                                         <p class="price m-0">
                                             <span class="last-price">$30.00</span>
@@ -300,12 +303,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book04.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book04.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The Night Watchman</h6>
+                                        <p class="card-title font-weight-bold">نگهبانان شب</h6>
                                         <p class="card-text">Louise Erdrich</p>
                                         <p class="price m-0">
                                             <span class="last-price">$28.99</span>
@@ -321,12 +324,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book05.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book05.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">The City We Became</h6>
+                                        <p class="card-title font-weight-bold">شهری که ما شدیم</h6>
                                         <p class="card-text">N K Jemisin</p>
                                         <p class="price m-0">
                                             <span class="last-price">$28.00</span>
@@ -342,12 +345,12 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-4">
                                     <a class="book-link" href="#">
-                                        <img src="assets/images/book06.jpg" class="rounded" alt="..." style="width: 100%;">
+                                        <img src="dist/images/book06.jpg" class="rounded" alt="..." style="width: 100%;">
                                     </a>
                                 </div>
                                 <div class="col-lg-8 col-md-6 col-sm-6 col-8 d-flex align-items-center">
                                     <div class="card-body p-0">
-                                        <h6 class="card-title">Writers & Lovers</h6>
+                                        <p class="card-title font-weight-bold">نویسندگان و عاشقان</p>
                                         <p class="card-text">Lily King</p>
                                         <p class="price m-0">
                                             <span class="last-price">$27.00</span>

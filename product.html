@@ -2,30 +2,30 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/app.css">
     <title>Bookstore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="rtl">
     <div>
         <header class="mb-5">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light px-0">
-                    <a class="navbar-brand text-white" href="#">Bookstore</a>
-                    <ul class="navbar-nav ml-auto" id="big-size">
+                    <a class="navbar-brand text-white" href="#">کتاب سعدی</a>
+                    <ul class="navbar-nav mr-auto" id="big-size">
                         <li class="nav-item">
-                            <a class="nav-link text-white mr-3" href="#">FIND A BOOKSTORE</a>
+                            <a class="nav-link text-white ml-3" href="#">فروشگاه ها</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white mr-3" href="#">BROWSE</a>
+                            <a class="nav-link text-white ml-3" href="#">عضویت</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-shopping-bag text-white mr-3"></i>
+                            <a class="ml-3" href="#">
+                                <i class="fas fa-shopping-bag text-white"></i>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -37,25 +37,26 @@
                     <!-- ////////////////////////////////////////////////////////////////////////////////// -->
                     <ul class="navbar-nav" id="small-size">
                         <li class="nav-item">
-                            <a href="#">
-                                <i class="far fa-map mr-3"></i>
+                            <a class="mr-3" href="#">
+                                <i class="far fa-map"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-shopping-bag mr-3"></i>
+                            <a class="mr-3" href="#">
+                                <i class="fas fa-shopping-bag"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">
+                            <a class="mr-3" href="#">
                                 <i class="far fa-user-circle"></i>
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <form>
-                    <div class="form-group m-0 pb-3">
-                        <input type="email" class="form-control" id="exampleInputsearch" aria-describedby="emailHelp" placeholder="Find a book">
+                    <div class="form-group small-search m-0 pb-3">
+                        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" required>
+                        <label for="name">جستجو کنید ...</label>
                         <i class="fas fa-search"></i>
                     </div>
                 </form>
@@ -67,36 +68,40 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="one-product-image d-flex justify-content-center mb-4">
-                                <img src="assets/images/book001.jpg" class="rounded">
+                                <img src="dist/images/book001.jpg" class="rounded">
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6 col-sm-6 col-12">
                             <div>
                                 <div class="book-detail mb-4">
-                                    <h2>The Mirror & the Light</h2>
-                                    <h6>Delia Owens</h6>
+                                    <h2 class="font-weight-bold mb-4">جایی که خرچنگ‌ها آواز می‌خوانند</h2>
+                                    <h6>
+                                        <b>اثر:</b> دلیا اونس
+                                    </h6>
                                 </div>
                                 <hr>
                                 <div class="one-product-price">
-                                    <h6>Format</h6>
+                                    <h6 class="font-weight-bold">
+                                        نوع
+                                    </h6>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
                                             <a href="#" class="btn btn-outline-light btn-block text-dark rounded py-3">
-                                                <h6>Hardcover</h6>
+                                                <h6>گالینگور</h6>
                                                 <span class="last-price">$30.00</span>
                                                 <span class="new-price">$23.40</span>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
                                             <a href="#" class="disabled btn btn-outline-light btn-block text-dark rounded py-3">
-                                                <h6>Paperback</h6>
+                                                <h6>شومیز</h6>
                                                 <span class="last-price">$28.00</span>
                                                 <span class="new-price">$25.20</span>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
                                             <a href="#" class="disabled btn btn-outline-light btn-block text-dark rounded py-3">
-                                                <h6>Compact Disc</h6>
+                                                <h6>لوح فشرده</h6>
                                                 <span class="last-price">$24.99</span>
                                                 <span class="new-price">$22.49</span>
                                             </a>
@@ -114,13 +119,13 @@
                                 </div>
                             </div>
                             <div class="buttons mb-4">
-                                <a href="#" class="buy btn btn-light px-5 py-2">BUY NOW</a>
-                                <a href="#" class="add-to-cart btn btn-outline-light px-5">ADD TO CART</a>
+                                <a href="#" class="buy btn btn-light px-5 py-2">خرید</a>
+                                <a href="#" class="add-to-cart btn btn-outline-light px-5">اضافه به سبد</a>
                             </div>
-                            <h6>AVAILABLE</h6>
+                            <h6 class="font-weight-bold text-danger">موجود</h6>
                             <hr>
                             <div>
-                                <h3>Description</h3>
+                                <h3 class="font-weight-bold">خلاصه</h3>
                                 <p>
                                     "I can't even express how much I love this book I didn't want this story to end "--Reese Witherspoon
                                     "Painfully beautiful."--The New York Times Book Review
