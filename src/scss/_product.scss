@@ -1,3 +1,7 @@
+body {
+	font-family: IRANsans;
+}
+
 .one-product .one-product-image {
 }
 
@@ -23,13 +27,7 @@
 	text-decoration: line-through;
 }
 
-.one-product .buttons .buy, .add-to-cart{
-	border-radius: 9999px;
-	transition: transform 150ms ease-in, box-shadow 150ms ease-in, -webkit-transform 150ms ease-in;
-}
-
-.one-product .buttons .buy:hover, .add-to-cart:hover {
-	// transform: scale(1.025);
+.one-product .buttons .buy {
 }
 
 .one-product .buttons .buy {
@@ -37,7 +35,47 @@
 	color: #fff;
 }
 
-.one-product .buttons .add-to-cart {
-	border: 2px solid #573ba3;
-	color: #573ba3;
+.product-description {
+	line-height: 2.5;
+}
+
+.header-search form {
+	position: relative;
+}
+
+.header-search input {
+    border-radius: 9999px;
+    width: 25vw !important;
+    border: none !important;
+    outline: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: #333;
+    padding: 0 80px;
+
+    &:focus,
+    &:valid {
+        ~label {
+            color: #ddd;
+            font-size: 10px;
+            top: 10px;
+            right: 14px;
+        }
+    }
+}
+
+.header-search label {
+    position: absolute;
+    right: 25px;
+    top: 6px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(.64, .09, .08, 1) all;
+}
+
+header .header-search i {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 14px;
 }

@@ -15,7 +15,7 @@
         text-align: center;
     }
 
-    .one-product .buttons .buy, .add-to-cart {
+    .one-product .buttons .buy{
         display: block;
     }
 
@@ -26,11 +26,12 @@
         display: none;
     }
 
-    .section .container {
+    .section .section-detail {
+        min-height: 24rem;
     }
 
-    .section .section-detail {
-
+    .header-search {
+        display: none;
     }
 }
 
@@ -42,7 +43,7 @@
         display: none;
     }
 
-    header form {
+    header form .small-search{
         display: none;
     }
 
