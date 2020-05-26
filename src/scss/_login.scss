@@ -1,0 +1,36 @@
+.login {
+    width: 70%;
+    border: 1px solid #573ba3;
+}
+
+.login .form-group {
+    position: relative;
+}
+
+.login .form-group label {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(.64, .09, .08, 1) all;
+}
+
+.login .form-group input {
+    box-shadow: none;
+    padding: 1.4rem .75rem .375rem;
+    height: auto;
+
+
+    &:focus,
+    &:valid {
+        background-position: 0 0;
+
+        ~label {
+            color: #ddd;
+            font-size: 10px;
+            right: 10px;
+            top: 5px;
+        }
+    }
+}
