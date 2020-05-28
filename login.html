@@ -10,8 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="rtl">
-    <div>
+<body class="d-flex flex-column rtl">
         <header class="px-4">
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light px-0">
@@ -19,7 +18,8 @@
                     <div class="header-search mr-4">
                         <form class="form-inline">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="name" aria-describedby="emailHelp" required>
+                                <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
+                                    required>
                                 <label for="name">جستجو کنید ...</label>
                                 <i class="fas fa-search"></i>
                             </div>
@@ -71,41 +71,41 @@
                 </form>
             </div>
         </header>
-        <div class="login d-flex align-items-center">
+        <div class="login flex-grow-1 d-flex align-items-center my-5">
             <div class="container">
-                <div class="login-form rounded mx-auto p-5">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control f14" id="inputText1" required>
-                            <label for="inputText1">نام</label>
+                <div class="login-form rounded p-5">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control f14" id="inputText1" required>
+                                <label for="inputText1">نام</label>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control f14" id="inputText2" required>
+                                <label for="inputText2">نام خانوادگی</label>
+                            </div>
                         </div>
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control f14" id="inputText2" required>
-                            <label for="inputText2">نام خانوادگی</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control f14" id="inputText3" required>
+                            <label for="inputText3">آدرس</label>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control f14" id="inputText3" required>
-                        <label for="inputText3">آدرس</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control f14" id="inputText4" required>
-                        <label for="inputText4">کد پستی</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control f14" id="inputText5" required>
-                        <label for="inputText5">شماره تلفن همراه</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control f14" id="inputText6" required>
-                        <label for="inputText6">پست الکترونیک</label>
-                    </div>
-                    <button type="submit" class="btn btn-block text-white">تایید</button>
-                </form>
+                        <div class="form-group">
+                            <input type="text" class="form-control f14" id="inputText4" required>
+                            <label for="inputText4">کد پستی</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control f14" id="inputText5" required>
+                            <label for="inputText5">شماره تلفن همراه</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control f14" id="inputText6" required>
+                            <label for="inputText6">پست الکترونیک</label>
+                        </div>
+                        <button type="submit" class="btn btn-block text-white">تایید</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
         <footer class="">
             <div class="two-footer text-center py-3">
                 <div>
@@ -116,18 +116,18 @@
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a class="text-decoration-none mx-2 f20" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="text-decoration-none mx-2 f20" href="#">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a class="text-decoration-none mx-2 f20" href="#">
-                    <i class="fas fa-rss"></i>
-                </a>
-                <a class="text-decoration-none mx-2 f20" href="#">
-                    <i class="fab fa-android"></i>
-                </a>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-decoration-none mx-2 f20" href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a class="text-decoration-none mx-2 f20" href="#">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                    <a class="text-decoration-none mx-2 f20" href="#">
+                        <i class="fab fa-android"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
