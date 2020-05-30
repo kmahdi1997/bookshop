@@ -34,12 +34,17 @@
         display: none;
     }
 
+    .category .container {
+        overflow: auto;
+        white-space: nowrap;
+    }
 }
 
 
 
 
 @media screen and (min-width: 992px) {
+
     header #small-size {
         display: none;
     }
